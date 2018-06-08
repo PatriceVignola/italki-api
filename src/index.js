@@ -1,3 +1,7 @@
+/**
+ * @prettier
+ */
+
 function index() {
   return true;
 }
