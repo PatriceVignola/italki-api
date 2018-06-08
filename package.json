@@ -1,0 +1,25 @@
+{
+  "name": "italki-api",
+  "version": "0.0.1",
+  "description": "An unofficial JavaScript wrapper for the official italki API.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatriceVignola/italki-api.git"
+  },
+  "keywords": [
+    "italki",
+    "api",
+    "unofficial",
+    "wrapper"
+  ],
+  "author": "Patrice Vignola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatriceVignola/italki-api/issues"
+  },
+  "homepage": "https://github.com/PatriceVignola/italki-api#readme"
+}
