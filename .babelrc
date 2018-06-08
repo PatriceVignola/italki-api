@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "env"
+  ],
+  "plugins": [
+    "transform-flow-strip-types"
+  ],
+  "ignore": [
+    "lib/*.test.js"
+  ]
+}

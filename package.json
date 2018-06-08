@@ -13,7 +13,8 @@
     "build-dist-min": "ROLLUP_ENV=production rollup -c -o dist/italki-api.min.js",
     "build-lib": "babel src -d lib --ignore '**/*.test.js' && flow-copy-source src/ lib/ -i '**/*.test.js'",
     "build": "yarn build-clean && yarn build-lib && yarn build-dist && yarn build-dist-min",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "report-coverage": "coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,9 @@
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.1",
     "flow-copy-source": "^2.0.0",
+    "jest": "^23.1.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.60.1",
     "rollup-plugin-commonjs": "^9.1.3",
