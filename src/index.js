@@ -1,5 +1,6 @@
 /**
  * @prettier
+ * @flow
  */
 
 function index() {

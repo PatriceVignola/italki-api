@@ -1,5 +1,6 @@
 /**
  * @prettier
+ * @flow
  */
 
 import index from './index';
