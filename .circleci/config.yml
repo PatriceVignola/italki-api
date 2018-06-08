@@ -33,4 +33,4 @@ jobs:
           command: yarn build
       - run:
           name: Generating Coveralls Report
-          command: yarn push-coverage
+          command: yarn report-coverage
