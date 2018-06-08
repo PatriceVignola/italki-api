@@ -12,7 +12,7 @@ const config = {
     format: 'iife',
     name: 'ItalkiApi',
     globals: {
-      'text-encoding': 'window',
+      'fetch': 'window',
     },
   },
   plugins: [

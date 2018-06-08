@@ -14,6 +14,7 @@
     "build-lib": "babel src -d lib --ignore '**/*.test.js' && flow-copy-source src/ lib/ -i '**/*.test.js'",
     "build": "yarn build-clean && yarn build-lib && yarn build-dist && yarn build-dist-min",
     "test": "jest --coverage",
+    "lint": "eslint .",
     "report-coverage": "coveralls < coverage/lcov.info"
   },
   "repository": {
@@ -38,6 +39,13 @@
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "flow-copy-source": "^2.0.0",
     "jest": "^23.1.0",
     "rimraf": "^2.6.2",
