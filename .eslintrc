@@ -16,10 +16,8 @@
   },
   "rules": {
     "no-unused-expressions": [2, { "allowShortCircuit": true }],
-    "prettier/prettier": [2, "fb", "@format"]
-  },
-  "globals": {
-    "fetch": true
+    "prettier/prettier": [2, "fb", "@format"],
+    "no-console": [0]
   }
 }
 

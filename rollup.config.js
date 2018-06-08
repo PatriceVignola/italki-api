@@ -9,11 +9,8 @@ const env = process.env.ROLLUP_ENV;
 const config = {
   input: 'src/index.js',
   output: {
-    format: 'iife',
+    format: 'umd',
     name: 'ItalkiApi',
-    globals: {
-      'fetch': 'window',
-    },
   },
   plugins: [
     flow({

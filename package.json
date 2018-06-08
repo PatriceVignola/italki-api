@@ -4,7 +4,6 @@
   "description": "An unofficial JavaScript wrapper for the official italki API.",
   "main": "./lib/index.js",
   "files": [
-    "dist",
     "lib"
   ],
   "scripts": {
@@ -81,5 +80,8 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^4.0.0",
     "uglify-es": "^3.3.9"
+  },
+  "dependencies": {
+    "node-fetch": "^2.1.2"
   }
 }
