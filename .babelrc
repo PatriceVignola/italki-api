@@ -3,7 +3,8 @@
     "env"
   ],
   "plugins": [
-    "transform-flow-strip-types"
+    "transform-flow-strip-types",
+    "transform-runtime"
   ],
   "ignore": [
     "lib/*.test.js"

@@ -2,7 +2,6 @@
  * @prettier
  * @flow
  */
-
 import fetch from 'node-fetch';
 
 type UserJson = {

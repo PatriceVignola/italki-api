@@ -3,8 +3,6 @@
  * @flow
  */
 
-import 'regenerator-runtime/runtime';
-
 import fetchUser from './fetchUser';
 import type {User as InternalUser} from './fetchUser';
 
