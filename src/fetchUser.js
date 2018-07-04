@@ -139,7 +139,13 @@ const genders = ['Unspecified', 'Female', 'Male'];
 
 async function fetchUser(userId: number): Promise<User> {
   const response = await fetch(`https://www.italki.com/api/user/${userId}`);
+
+  if (response.status === 404) {
+    throw Error('Invalid user ID.');
+  }
+
   const json: UserJson = await response.json();
+
   const avatarUrl = json.data.avatar_file_name
     ? `${avatarEndpoint}${json.data.avatar_file_name}_Avatar.jpg`
     : null;

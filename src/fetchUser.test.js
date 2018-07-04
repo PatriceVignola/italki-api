@@ -192,4 +192,17 @@ describe('fetchUser', () => {
     const user = await fetchUser(123456);
     expect(user).toEqual(otherExpectedUser);
   });
+
+  it('throws an error if the user ID is invalid', async () => {
+    fetch.mockImplementationOnce(
+      () =>
+        new Promise(resolve => {
+          resolve({
+            status: 404,
+          });
+        }),
+    );
+
+    expect(fetchUser(123)).rejects.toThrow();
+  });
 });
