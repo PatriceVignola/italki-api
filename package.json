@@ -1,6 +1,6 @@
 {
   "name": "italki-api",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "An unofficial JavaScript wrapper for the official italki API.",
   "main": "./lib/index.js",
   "files": [
